@@ -1,5 +1,3 @@
-
-
 name: Build Android APK
 
 on:
@@ -23,7 +21,9 @@ jobs:
       - name: Install Flet CLI
         run: pip install flet
       - name: Build APK
-        run: flet build apk --yes -vv
+        run: |
+          flutter doctor -v || true
+          flet build apk --yes -vv
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
