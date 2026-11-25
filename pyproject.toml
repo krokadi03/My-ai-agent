@@ -1,0 +1,13 @@
+[project]
+name = "my-ai-agent"
+version = "0.1.0"
+description = "Мой ИИ-Агент на базе Gemini API"
+requires-python = ">=3.10"
+dependencies = [
+  "flet==0.24.1"
+]
+
+[tool.flet]
+org = "com.example.myaiagent"
+product = "Мой ИИ-Агент"
+project = "my_ai_agent"
