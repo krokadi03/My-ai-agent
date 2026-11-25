@@ -133,7 +133,7 @@ def main(page: ft.Page):
     msg_input.on_submit = send_message
 
     send_btn = ft.IconButton(
-        icon=ft.Icons.SEND,
+        icon=getattr(ft.Icons, "SEND", getattr(ft.Icons, "send", None)),
         icon_color="#ffffff",
         bgcolor="#2563eb",
         on_click=send_message,
@@ -147,5 +147,6 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.run(main)
+
 
