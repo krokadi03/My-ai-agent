@@ -6,11 +6,11 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
   "flet",
-  "google-genai",
 ]
 
 [tool.flet]
 org = "com.example"
 product = "My AI Agent"
 project = "my-ai-agent"
+
 
