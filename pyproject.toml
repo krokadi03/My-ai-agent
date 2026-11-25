@@ -1,13 +1,16 @@
 [project]
 name = "my-ai-agent"
 version = "0.1.0"
-description = "Мой ИИ-Агент на базе Gemini API"
+description = "AI Agent app built with Flet"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "flet==0.24.1"
+  "flet",
+  "google-genai",
 ]
 
 [tool.flet]
-org = "com.example.myaiagent"
-product = "Мой ИИ-Агент"
-project = "my_ai_agent"
+org = "com.example"
+product = "My AI Agent"
+project = "my-ai-agent"
+
