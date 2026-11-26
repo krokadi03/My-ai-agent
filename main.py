@@ -195,7 +195,7 @@ def main(page: ft.Page):
                     ft.Row(
                         [
                             ft.TextButton(
-                                text="Копировать",
+                                content="Копировать",
                                 on_click=lambda e, t=answer_text: copy_text(t),
                             )
                         ],
@@ -221,7 +221,7 @@ def main(page: ft.Page):
     mode_dropdown.on_change = on_mode_change
 
     clear_btn = ft.TextButton(
-        text="Очистить",
+        content="Очистить",
         on_click=clear_chat,
     )
 
@@ -243,7 +243,7 @@ def main(page: ft.Page):
     quick_row = ft.Row(
         controls=[
             ft.OutlinedButton(
-                text=label,
+                content=label,
                 on_click=lambda e, p=prefix: fill_prompt(p),
             )
             for label, prefix in QUICK_PROMPTS
@@ -318,5 +318,6 @@ def main(page: ft.Page):
 if __name__ == "__main__":
     ft.run(main)
 
+            
 
 
